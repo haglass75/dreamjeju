@@ -1,0 +1,65 @@
+@charset "utf-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+/* 전체레이웃 */
+.wrap {
+  width: 1200px;
+  margin: auto;
+  background-color: aqua;
+}
+/* 상단 */
+.header {
+  height: 100px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  background-color: rgb(52, 162, 162);
+}
+/* 상단왼쪽 */
+.logo {
+  width: 200px;
+  font-size: 30px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: bold;
+  color: #fff;
+}
+.logo a {
+  color: #fff;
+}
+/* 상단오른쪽 */
+nav {
+  position: relative;
+  width: 1000px;
+  height: 100px;
+  background-color: burlywood;
+}
+#topMenu {
+  position: absolute;
+  bottom: 0;
+  right: 20px;
+  display: flex;
+  width: 800px;
+  background-color: rgb(58, 241, 165);
+}
+#topMenu > li {
+  width: calc(100% / 4);
+}
+#topMenu > li > a {
+    display: block;
+  line-height: 60px;
+}
+#topMenu > li > a:hover{
+    background-color: chartreuse;
+    color: red;
+}
