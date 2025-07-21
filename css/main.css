@@ -56,10 +56,48 @@ nav {
   width: calc(100% / 4);
 }
 #topMenu > li > a {
-    display: block;
+  display: block;
   line-height: 60px;
 }
-#topMenu > li > a:hover{
-    background-color: chartreuse;
-    color: red;
+#topMenu > li > a:hover {
+  background-color: chartreuse;
+  color: red;
+}
+/* 메인 */
+.contents {
+  width: 100%;
+}
+/* hilling */
+.hilling {
+  width: 100%;
+  padding: 20px;
+}
+.description{
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+    /* background-color: rgb(242, 127, 255); */
+}
+.desc-img{
+border-radius: 20px;
+overflow: hidden;
+}
+.desc-img img{
+    display: block;
+    transition: all 0.3s;
+}
+.desc-img:hover img{
+    transform: scale(1.2);
+    filter: blur(2px);
+}
+/* 자세한 설명 */
+.desc-detial{
+    width: 600px;
+    background-color: azure;
+}
+.p_top{
+margin-bottom: 10px;
+}
+.detail-top{
+    margin-bottom: 20px;
 }
